@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/theMealDB_/static/css/main.7acaea2f.css",
+    "main.js": "/theMealDB_/static/js/main.07d3183d.js",
+    "index.html": "/theMealDB_/index.html",
+    "main.7acaea2f.css.map": "/theMealDB_/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/theMealDB_/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
