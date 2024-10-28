@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 const SelectedRecipesPage = ({ setSelectedMeals }) => {
     const [selectedMeals, setSelectedMealsState] = useState([]);
 
-    useEffect(() => {
-        const storedSelectedMeals = JSON.parse(localStorage.getItem('selectedMeals')) || [];
-        setSelectedMealsState(storedSelectedMeals); 
-    }, []);
+useEffect(() => {
+    const storedSelectedMeals = JSON.parse(localStorage.getItem('selectedMeals') || '[]');
+    setSelectedMealsState(storedSelectedMeals); 
+}, []);
+
 
     return (
         <div>

@@ -3,7 +3,7 @@ import CategoryMeals from './CategoryMeals';
 
 interface MealCategoriesProps {
   categor: { idCategory: string; strCategory: string }[];
-  setSelectedMeals?: (meals: any[]) => void; // Пропс для передачи setSelectedMeals
+  setSelectedMeals?: (meals: any[]) => void; 
 }
 
 export const MealCategories: React.FC<MealCategoriesProps> = ({ categor, setSelectedMeals }) => {
