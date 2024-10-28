@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+export const MainContainer = styled.div`
+  height: 60px;
+  width: 100%;
+  /* padding: 0.25rem 2rem; */
+`;
 
 export const ListNav = styled.nav`
   display: flex;
@@ -8,7 +13,11 @@ export const ListNav = styled.nav`
 `;
 
 export const WrapperL = styled.div`
-  background-color: rgba(250, 250, 200, 0.2);
+    height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   `
 
 export const ListItem = styled(NavLink)`

@@ -1,9 +1,16 @@
- import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { searchMealByName } from '../Api/Api';
+
+interface Meal {
+    idMeal: string;
+    strMeal: string;
+    strArea: string;
+    strMealThumb: string;
+}
 
 const MealSearch = () => {
   const [mealName, setMealName] = useState('');
-  const [meals, setMeals] = useState([]);
+  const [meals, setMeals] = useState<Meal[]>([]);
 
   function debounce(func, timeout = 300){
   let timer;

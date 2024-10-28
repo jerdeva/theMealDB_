@@ -1,7 +1,13 @@
 import React from "react";
 
-const Pagination = ({ currentPage, totalPages, onPageChange }) => {
-  const pageNumbers = [];
+interface PaginationProps {
+  currentPage: number;
+  totalPages: number;
+  onPageChange: (page: number) => void;
+}
+
+const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPageChange }) => {
+  const pageNumbers: (number | string)[] = []; 
 
   if (totalPages <= 10) {
     for (let i = 1; i <= totalPages; i++) {
@@ -45,7 +51,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
           key={index}
           className={number === currentPage ? "active" : ""}
           onClick={() => {
-            if (number !== "...") {
+            if (typeof number === "number") { // Проверка, чтобы onPageChange принимал только число
               onPageChange(number);
             }
           }}
