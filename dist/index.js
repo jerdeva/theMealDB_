@@ -1,9 +1,10 @@
+import { jsx as _jsx } from "react/jsx-runtime";
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(basename, "/theMealDB_" >
-    />
-    < /BrowserRouter>
-    < /React.StrictMode>);
+root.render(_jsx(React.StrictMode, { children: _jsx(BrowserRouter, { basename: "/theMealDB_", children: _jsx(App, {}) }) }));
 reportWebVitals();
