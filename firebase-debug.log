@@ -1,0 +1,21 @@
+[debug] [2024-11-03T12:09:02.301Z] ----------------------------------------------------------------------
+[debug] [2024-11-03T12:09:02.306Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2024-11-03T12:09:02.306Z] CLI Version:   13.23.1
+[debug] [2024-11-03T12:09:02.306Z] Platform:      darwin
+[debug] [2024-11-03T12:09:02.306Z] Node Version:  v20.9.0
+[debug] [2024-11-03T12:09:02.306Z] Time:          Sun Nov 03 2024 14:09:02 GMT+0200 (Восточная Европа, стандартное время)
+[debug] [2024-11-03T12:09:02.306Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-03T12:09:02.309Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-03T12:09:02.309Z] > authorizing via signed-in user (lena.jerdeva28@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/elenajerdeva/Desktop/theMealDB_
+

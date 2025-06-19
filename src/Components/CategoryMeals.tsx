@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { filterMealsByCategory } from '../Api/Api';
 import Pagination from './Pagination';
 import SelectedRecipes from './SelectedRecipes';
-import { MainContainer } from './CategoryMeals.rtyled';
+import { MainContainer, MainTitle, UlContainer} from './CategoryMeals.styled';
 import { Meal } from './types';
 
 
@@ -34,10 +34,10 @@ const CategoryMeals = ({ category, setSelectedMeals }) => {
 
     return (
         <div>
-            <h2>Meals in {category}</h2>
+            <MainTitle>Meals in {category}</MainTitle>
             <MainContainer>
                 <div>
-                    <ul>
+                    <UlContainer>
                         {currentMeals && currentMeals.length > 0 ? (
                             currentMeals.map(meal => (
                                 <li key={meal.idMeal}>
@@ -50,7 +50,7 @@ const CategoryMeals = ({ category, setSelectedMeals }) => {
                         ) : (
                             <p>No meals found in this category</p>
                         )}
-                    </ul>
+                    </UlContainer>
                 </div>
                 <div>
                     <SelectedRecipes selectedMeals={currentMeals} setSelectedMeals={setSelectedMeals} />

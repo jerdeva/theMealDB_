@@ -1,12 +1,12 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import {ListNav,ListItem, Container, Header, FooterText, WrapperL, MainContainer} from './Layout.styled'
+import {ListNav,ListItem, Container, Header, FooterText, WrapperL} from './Layout.styled'
 
 
 export const Layout = ()=>{
     return (
-            <MainContainer>
+            <div>
                 <WrapperL>
                     <Header>
                     <ListNav>
@@ -24,6 +24,6 @@ export const Layout = ()=>{
                     <FooterText>&copy; {new Date().getFullYear()} Jerdeva Olena</FooterText>
                 </footer>
             </Container>
-            </MainContainer>
+            </div>
 )
 }
